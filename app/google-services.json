@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "730669664372",
+    "firebase_url": "https://hots-tc.firebaseio.com",
+    "project_id": "hots-tc",
+    "storage_bucket": "hots-tc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730669664372:android:d5dd352a44667d89",
+        "android_client_info": {
+          "package_name": "com.hots.desert.hotstc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730669664372-ev8uv0a0ehjruc1f721mmkcpi22oi6oj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hots.desert.hotstc",
+            "certificate_hash": "6958DD20489509F786B98F414B02CF85ECE314B0"
+          }
+        },
+        {
+          "client_id": "730669664372-hjjmrffa4qj860fuuauehuerdj7g1kih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hots.desert.hotstc",
+            "certificate_hash": "44EE85081B4A30F275A2867890ED2901125D40BB"
+          }
+        },
+        {
+          "client_id": "730669664372-v6236a5ctd237ao6s13q42frc4tk179e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJCkqIPFuoNP_xU76xKpK-_rVSNfT_2ZE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730669664372-v6236a5ctd237ao6s13q42frc4tk179e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
