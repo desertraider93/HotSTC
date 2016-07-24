@@ -1,1 +1,27 @@
-
+language: android
+android:
+  components:
+  - platform-tools
+  - tools
+  - build-tools-24.0.1
+  - android-24
+  - extra-google-google_play_services
+  - extra-android-m2repository
+  - extra-google-m2repository
+  - extra-android-support
+  licenses:
+  - android-sdk-license-.+
+  - google-gdk-license-.+
+before_script:
+- chmod +x gradlew
+script:
+- "./gradlew build"
+deploy:
+  skip_cleanup: true
+  provider: releases
+  prerelease: true
+  api_key:
+    secure: dkwaUTBK2qSaB2L/vDhEP/UwpC1zydTTPCfzU3JbwkjtIAPet5Y2K5PXqnt9ycU1r+bbp1p+RJVjo/8sU38GFqtA55FpdrJi3CPlzPnQr8Dtt1UUHFu4X1m/KYXeFwGRyjDKeH+2M0PstnMukYMY2HI3n7D0W6IHMciIdvMwwoQ/oLt5P/jy4udogR85nQ5aC8kLiZWOtAmo5OIe5IKafoxlznKp5L99U9CvMElUhLkvs1UHiGFgvddBm29uzr85IBsj8sXalvGgmlPOp7cHKxYIpoPj8ZLuGqStFIHL3irRGmaoQD4hx5rkq+V7SHUPvnWZ2Pj420n3Lnqav/72/3jWMUHUBkLcsGhhS633ajpwPs/csZZr6GD7MMd/AOwN4XNsTm/ttTpAjIKXC89RNtXgiPBWp67u65XlO7DvHNtE6O9fI4cRmEd2KlauvvoIdE/9uYshWaFrYvJ3crUmoZlZ4UWuhTr8iIGrwyqlAdAOzwPor3YkMC1AEHDpggW9DevVYFK/NInc5SfjvZJma+kesxurJHvKy1Y+J2yiCfR67KOIZKedDfOrSrI5xxODUM7IZrkMkS84KTsk60kZPDD/RSvI0RPwsx7AJ/SdVz5AvA282+6DenziZC3/9Yg8sxPAY4wfKbvxqzCYGaDNRR9fyeS12oQf8LEC3YPwRjM=
+  file: $TRAVIS_BUILD_DIR/app/build/outputs/apk/app-debug.apk
+  on:
+    repo: Jubrasoft/Erziehungswissen
